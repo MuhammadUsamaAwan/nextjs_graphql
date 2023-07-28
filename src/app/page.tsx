@@ -1,7 +1,7 @@
 import { User, columns } from './columns'
 import { DataTable } from './data-table'
 
-export async function getUsers(): Promise<User[]> {
+async function getUsers(): Promise<User[]> {
   const response = await fetch(`${process.env.NEXT_URL}/graphql`, {
     method: 'POST',
     body: JSON.stringify({
