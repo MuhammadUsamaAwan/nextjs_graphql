@@ -19,5 +19,3 @@ const { handleRequest } = createYoga({
 })
 
 export { handleRequest as GET, handleRequest as POST }
-
-export const runtime = 'edge'
